@@ -14,13 +14,8 @@ public class validation {
 		driver.manage().window().maximize();
 		driver.get("https://login.salesforce.com/?locale=in");
 		driver.close();
-		
-		
-		
-	}
-
-
-	public static void main(String[] args) {
+		}
+public static void main(String[] args) {
 		validation login=new validation();
 		login.salesforce_login();
 	}
