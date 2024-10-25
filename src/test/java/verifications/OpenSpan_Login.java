@@ -1,12 +1,9 @@
 package verifications;
 
 import java.time.Duration;
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class OpenSpan_Login {
@@ -17,8 +14,6 @@ public class OpenSpan_Login {
 		driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
-		
-		
 	}
 	public static void Login() {
 		driver.get("https://training.openspan.com/login");
@@ -27,9 +22,6 @@ public class OpenSpan_Login {
 		driver.findElement(By.id("login_button")).click();
 		driver.close();
 	}
-	
-	
-
 	public static void main(String[] args) {
 		
 		OpenSpan_Login.InvokeBrowser();
